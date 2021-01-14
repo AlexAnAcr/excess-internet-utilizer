@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:drawingCacheQuality="low"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:scrollbars="vertical">
+    <TextView
+        android:text="Проверка подключения к сети..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusText"
+        android:gravity="center_horizontal"
+        android:textColor="@color/EIU_light_blue"
+        android:textSize="20sp"
+        android:scrollHorizontally="false"
+        android:bufferType="normal" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/utilizite"
+        android:scrollbars="none">
+        <TextView
+            android:text="@string/util_speed_u"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="24sp"
+            android:textColor="@color/EIU_light_white"
+            android:paddingTop="10sp"
+            android:scrollHorizontally="false" />
+        <TextView
+            android:text="0 бит/с"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/speedMbit"
+            android:textSize="40sp"
+            android:textColor="@color/EIU_light_gray"
+            android:scrollHorizontally="false"
+            android:bufferType="normal" />
+        <TextView
+            android:text="0 байт/с"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/speedMbyte"
+            android:textColor="@color/EIU_light_white"
+            android:textSize="20sp"
+            android:scrollHorizontally="false"
+            android:bufferType="normal" />
+        <TextView
+            android:text="@string/util_speed_ut"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="24sp"
+            android:textColor="@color/EIU_light_white"
+            android:paddingTop="10sp"
+            android:scrollHorizontally="false" />
+        <TextView
+            android:text="0 байт"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalUtil"
+            android:textColor="@color/EIU_light_white"
+            android:textSize="40sp"
+            android:scrollHorizontally="false"
+            android:bufferType="normal" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopButton"
+            android:textSize="20sp"
+            android:text="Остановить"
+            android:layout_marginTop="20sp" />
+    </LinearLayout>
+</LinearLayout>

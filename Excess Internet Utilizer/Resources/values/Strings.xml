@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Excess Internet Utilizer</string>
+  <string name="util_speed_u"><u>Скорость утилизации:</u></string>
+  <string name="util_speed_ut"><u>Всего утилизировано:</u></string>
+</resources>
